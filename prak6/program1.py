@@ -14,8 +14,8 @@ people = [
 # ===
 flights = {}
 for line in open("flights.txt"):
-    # print(line)
-    # print(line.split(','))
+    print(line)
+    print(line.split(','))
     origin, destiny, departure, arrival, price = line.split(",")
     flights.setdefault((origin, destiny), [])
     flights[(origin, destiny)].append((departure, arrival, int(price)))
